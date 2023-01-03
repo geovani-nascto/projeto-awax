@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+$primary-color: #B28756;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+
+@mixin container {
+    max-width: 1140px;
+    display: flex;
+}
+
+header{
+    height: 100px;
+    background-color: #000;
+
+    .container{
+        @include container();
+        height: 100px;
+        margin: auto;
+        align-items: center;
+
+        .logo{
+            width: 100px;
+
+            img{
+                width: 100px;
+                height: 50px;
+
+            }
+        }
+
+        .menu{
+            flex: 1; /*Todo o espaço restante*/
+            display: flex;
+            justify-content: flex-end;
+
+            nav{
+                ul{
+                    display: flex;
+                    li{
+                        a{
+                            color: #fff;
+                            text-decoration: none;
+                            font-weight: 600;
+                            font-size: 14px;
+                            padding: 0 10px;
+                            display: flex;
+                            /*Ou block, permitindo definir altura e ter borda dependendo da altura*/
+                            border-bottom: 5px solid #000;
+                            /*Para não ficar movendo com o hover*/
+                            align-items: center;
+                            height: 100px;
+                            text-transform: uppercase;
+                        }
+                        a:hover,
+                        .active{
+                            border-bottom: 5px solid $primary-color;
+                            color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main{
+
+    .banner{
+        background-color: #414040;
+        background-image: url(../img/icons/bg.jpg);
+        background-position: bottom;
+        background-size: cover;
+        height: calc(100vh - 100px);
+        overflow: hidden;
+
+        .sliders{
+            width: 1000vw;
+            height: 100%;
+
+            .slide{
+                width: 100vw;
+                height: 100%;
+                display: inline-block;
+                /*inline-block deixa tudo na mesma linha (inline), mas com as propriedades de altura/largura como se fosse display block*/
+                background-color: rgba(0, 0, 0, 0.75);
+
+                .slider-area{
+                    height: 100%;
+                    width: 100vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    h1{
+                        font-size: 60px;
+                        text-transform: uppercase;
+                        color: #fff;
+
+                        span{
+                            color: $primary-color;
+                            font-size: 66px;
+                        }
+                    }
+
+                    h2{
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-size: 22px;
+                        margin-top: 10px;
+                    }
+
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        display: block;
+                        /*Usar propriedades de largura e tudo mais*/
+                        background-color: $primary-color;
+                        padding: 15px 30px;
+                        border-radius: 15px;
+                        margin-top: 40px;
+                        font-size: 12px;
+                    }
+
+                    a:hover{
+                        background-color: #be9361;
+                    }
+                }
+            }
+        }
+
+        .sliders-pointers{
+            width: 100vw;
+            height: 20px;
+            position: absolute;
+            margin-top: -50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .pointers{
+                width: 20px;
+                height: 20px;
+                border: 2px solid $primary-color;
+                border-radius: 50%;
+                margin: 0 5px;
+                cursor: pointer;
+            }
+
+            .pointers:hover,
+            .active{
+                background-color: $primary-color;
+            }
+        }
+    }
+}

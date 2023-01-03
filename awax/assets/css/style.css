@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+}
+
+header {
+  height: 100px;
+  background-color: #000;
+}
+
+header .container {
+  max-width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .logo {
+  width: 100px;
+}
+
+header .container .logo img {
+  width: 100px;
+  height: 50px;
+}
+
+header .container .menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  /*Todo o espaço restante*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .container .menu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container .menu nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*Ou block, permitindo definir altura e ter borda dependendo da altura*/
+  border-bottom: 5px solid #000;
+  /*Para não ficar movendo com o hover*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  text-transform: uppercase;
+}
+
+header .container .menu nav ul li a:hover,
+header .container .menu nav ul li .active {
+  border-bottom: 5px solid #B28756;
+  color: #ccc;
+}
+
+main .banner {
+  background-color: #414040;
+  background-image: url(../img/icons/bg.jpg);
+  background-position: bottom;
+  background-size: cover;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+}
+
+main .banner .sliders {
+  width: 1000vw;
+  height: 100%;
+}
+
+main .banner .sliders .slide {
+  width: 100vw;
+  height: 100%;
+  display: inline-block;
+  /*inline-block deixa tudo na mesma linha (inline), mas com as propriedades de altura/largura como se fosse display block*/
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+main .banner .sliders .slide .slider-area {
+  height: 100%;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .banner .sliders .slide .slider-area h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+main .banner .sliders .slide .slider-area h1 span {
+  color: #B28756;
+  font-size: 66px;
+}
+
+main .banner .sliders .slide .slider-area h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+main .banner .sliders .slide .slider-area a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  /*Usar propriedades de largura e tudo mais*/
+  background-color: #B28756;
+  padding: 15px 30px;
+  border-radius: 15px;
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+main .banner .sliders .slide .slider-area a:hover {
+  background-color: #be9361;
+}
+
+main .banner .sliders-pointers {
+  width: 100vw;
+  height: 20px;
+  position: absolute;
+  margin-top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .banner .sliders-pointers .pointers {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #B28756;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+main .banner .sliders-pointers .pointers:hover,
+main .banner .sliders-pointers .active {
+  background-color: #B28756;
+}
+/*# sourceMappingURL=style.css.map */
