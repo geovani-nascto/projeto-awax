@@ -9,11 +9,26 @@ $primary-color: #B28756;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     list-style: none;
+    overflow-x: hidden;
 }
 
 @mixin container {
     max-width: 1140px;
     display: flex;
+}
+
+@mixin button{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    /*Usar propriedades de largura e tudo mais*/
+    background-color: $primary-color;
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin-top: 40px;
+    font-size: 12px;
 }
 
 header{
@@ -119,17 +134,7 @@ main{
                     }
 
                     a{
-                        color: #fff;
-                        text-decoration: none;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        display: block;
-                        /*Usar propriedades de largura e tudo mais*/
-                        background-color: $primary-color;
-                        padding: 15px 30px;
-                        border-radius: 15px;
-                        margin-top: 40px;
-                        font-size: 12px;
+                        @include button();
                     }
 
                     a:hover{
@@ -162,5 +167,102 @@ main{
                 background-color: $primary-color;
             }
         }
+    }
+
+    .default{
+        background-color: red;
+        padding: 50px 0;
+
+        .section-title,
+        .section-desc{
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .section-title{
+            font-size: 30px;
+        }
+
+        .section-desc{
+            font-size: 15px;
+            margin: 10px 0 40px 0;
+            color: rgb(180, 179, 179)
+        }
+
+        .section-body{
+            @include container();
+            margin: auto;
+
+            .about-us{
+                display: flex;
+
+                .aboutus-left{
+                    flex: 1;
+                    font-size: 18px;
+                    line-height: 30px;
+
+                    a{
+                        @include button();
+                        padding: 10px 50px;
+                        border-radius: 20px;
+                    }
+
+                    a:hover{
+                        background-color: #be9361;
+                    }
+                }
+
+                .aboutus-right{
+                    width: 530px;
+                    text-align: center;
+
+                    img{
+                        width: 480px;
+                        box-shadow: 0 10px 15px rgba(51, 51, 51, 0.418);
+                    }
+                }
+            }
+
+            .services{
+                display: flex;
+                /*Se não tivesse display flex e max-width do container, bastava usar um text-align*/
+
+                .service{
+                    text-align: center;
+                    border-right: 1px solid #494949;
+                    padding: 15px;
+
+                    img{
+                        width: 59px;
+                    }
+
+                    h2{
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        margin: 30px 0 10px 0;
+                    }
+
+                    p{
+                        font-size: 15px;
+                        color: #5f5e5e;
+                    }
+                }
+
+                .service:first-child{
+                    border-left: 1px solid #494949;
+                }
+            }
+        }
+    }
+
+    .light{
+        background-color: #f7f7f7;
+        color: #000;
+    }
+
+    .dark{
+        background-color: #000;
+        color: #fff;
     }
 }

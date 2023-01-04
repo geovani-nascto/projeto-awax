@@ -7,6 +7,7 @@
           box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   list-style: none;
+  overflow-x: hidden;
 }
 
 header {
@@ -142,7 +143,7 @@ main .banner .sliders .slide .slider-area a {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  display: block;
+  display: inline-block;
   /*Usar propriedades de largura e tudo mais*/
   background-color: #B28756;
   padding: 15px 30px;
@@ -183,5 +184,122 @@ main .banner .sliders-pointers .pointers {
 main .banner .sliders-pointers .pointers:hover,
 main .banner .sliders-pointers .active {
   background-color: #B28756;
+}
+
+main .default {
+  background-color: red;
+  padding: 50px 0;
+}
+
+main .default .section-title,
+main .default .section-desc {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+main .default .section-title {
+  font-size: 30px;
+}
+
+main .default .section-desc {
+  font-size: 15px;
+  margin: 10px 0 40px 0;
+  color: #b4b3b3;
+}
+
+main .default .section-body {
+  max-width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+main .default .section-body .about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .default .section-body .about-us .aboutus-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+main .default .section-body .about-us .aboutus-left a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  /*Usar propriedades de largura e tudo mais*/
+  background-color: #B28756;
+  padding: 15px 30px;
+  border-radius: 15px;
+  margin-top: 40px;
+  font-size: 12px;
+  padding: 10px 50px;
+  border-radius: 20px;
+}
+
+main .default .section-body .about-us .aboutus-left a:hover {
+  background-color: #be9361;
+}
+
+main .default .section-body .about-us .aboutus-right {
+  width: 530px;
+  text-align: center;
+}
+
+main .default .section-body .about-us .aboutus-right img {
+  width: 480px;
+  -webkit-box-shadow: 0 10px 15px rgba(51, 51, 51, 0.418);
+          box-shadow: 0 10px 15px rgba(51, 51, 51, 0.418);
+}
+
+main .default .section-body .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*Se não tivesse display flex e max-width do container, bastava usar um text-align*/
+}
+
+main .default .section-body .services .service {
+  text-align: center;
+  border-right: 1px solid #494949;
+  padding: 15px;
+}
+
+main .default .section-body .services .service img {
+  width: 59px;
+}
+
+main .default .section-body .services .service h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 30px 0 10px 0;
+}
+
+main .default .section-body .services .service p {
+  font-size: 15px;
+  color: #5f5e5e;
+}
+
+main .default .section-body .services .service:first-child {
+  border-left: 1px solid #494949;
+}
+
+main .light {
+  background-color: #f7f7f7;
+  color: #000;
+}
+
+main .dark {
+  background-color: #000;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
