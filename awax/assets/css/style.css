@@ -338,12 +338,14 @@ main .default .section-body .projects .projects-filters li:hover, main .default 
 }
 
 main .default .section-body .projects .photos {
-  background-color: red;
   width: 100vw;
   max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 30px;
@@ -351,6 +353,24 @@ main .default .section-body .projects .photos {
 
 main .default .section-body .projects .photos .photo {
   width: 280px;
+}
+
+main .default .section-body .projects .photos .photo .photo-area {
+  width: 260px;
+  margin: 10px;
+  height: 160px;
+  overflow-y: hidden;
+}
+
+main .default .section-body .projects .photos .photo .photo-area .photo-desc {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+main .default .section-body .projects .photos .photo .photo-area img {
+  width: inherit;
+  height: inherit;
 }
 
 main .light {

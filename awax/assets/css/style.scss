@@ -292,14 +292,33 @@ main{
                 }
 
                 .photos{
-                    background-color: red;
                     width: 100vw;
                     @include container();
+                    justify-content: center;
                     flex-wrap: wrap;
                     margin-top: 30px;
 
                     .photo{
                         width: 280px;
+
+                        .photo-area{
+                            width: 260px;
+                            margin: 10px;
+                            height: 160px;
+                            overflow-y: hidden;
+
+
+                            .photo-desc{
+                                position: absolute;
+                                width: inherit;
+                                height: inherit;
+                            }
+
+                            img{
+                                width: inherit;
+                                height: inherit;
+                            }
+                        }
                     }
                 }
             }
