@@ -442,4 +442,107 @@ main .bg .team-area {
   padding: 50px 0;
   /*Recolocando o padding para o bg-color pegar não só a div como "inline", mas todo o bg*/
 }
+
+main .bg .team-area .section-body .team {
+  overflow: hidden;
+  max-width: 880px;
+  margin: auto;
+}
+
+main .bg .team-area .section-body .team .sliders {
+  width: 1000vw;
+  height: 100%;
+}
+
+main .bg .team-area .section-body .team .sliders .slide {
+  width: 280px;
+  height: 100%;
+  min-height: 300px;
+  margin-right: 20px;
+  display: inline-block;
+  /*inline-block deixa tudo na mesma linha (inline), mas com as propriedades de altura/largura como se fosse display block*/
+  background-color: #fff;
+}
+
+main .bg .team-area .section-body .team .sliders .slide .slider-area {
+  height: 100%;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .bg .team-area .section-body .team .sliders .slide .slider-area h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+main .bg .team-area .section-body .team .sliders .slide .slider-area h1 span {
+  color: #B28756;
+  font-size: 66px;
+}
+
+main .bg .team-area .section-body .team .sliders .slide .slider-area h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+main .bg .team-area .section-body .team .sliders .slide .slider-area a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  /*Usar propriedades de largura e tudo mais*/
+  background-color: #B28756;
+  padding: 15px 30px;
+  border-radius: 15px;
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+main .bg .team-area .section-body .team .sliders .slide .slider-area a:hover {
+  background-color: #be9361;
+}
+
+main .bg .team-area .section-body .team .sliders-pointers {
+  margin-top: 30px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .bg .team-area .section-body .team .sliders-pointers .pointers {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #B28756;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+main .bg .team-area .section-body .team .sliders-pointers .pointers:hover,
+main .bg .team-area .section-body .team .sliders-pointers .active {
+  background-color: #B28756;
+}
 /*# sourceMappingURL=style.css.map */
