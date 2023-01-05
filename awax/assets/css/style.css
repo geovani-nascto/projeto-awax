@@ -269,6 +269,9 @@ main .default .section-body .services {
 }
 
 main .default .section-body .services .service {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: center;
   border-right: 1px solid #494949;
   padding: 15px;
@@ -291,6 +294,45 @@ main .default .section-body .services .service p {
 
 main .default .section-body .services .service:first-child {
   border-left: 1px solid #494949;
+}
+
+main .default .section-body .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+main .default .section-body .projects .projects-filters {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 0px 30px;
+  padding-top: 5px;
+  background-color: #eee;
+  display: inline-block;
+}
+
+main .default .section-body .projects .projects-filters li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 12px;
+  font-size: 13px;
+  border-left: 1px solid #ccc;
+  border-bottom: 3px solid #eee;
+  cursor: pointer;
+  color: #555;
+}
+
+main .default .section-body .projects .projects-filters li:first-child {
+  border-left: 0;
+}
+
+main .default .section-body .projects .projects-filters li:hover, main .default .section-body .projects .projects-filters .active {
+  border-bottom: 3px solid #B28756;
 }
 
 main .light {

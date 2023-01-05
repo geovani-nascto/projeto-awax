@@ -229,6 +229,7 @@ main{
                 /*Se não tivesse display flex e max-width do container, bastava usar um text-align*/
 
                 .service{
+                    flex: 1;
                     text-align: center;
                     border-right: 1px solid #494949;
                     padding: 15px;
@@ -251,6 +252,41 @@ main{
 
                 .service:first-child{
                     border-left: 1px solid #494949;
+                }
+            }
+
+            .projects{
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+
+                .projects-filters{
+                    border: 1px solid #ccc;
+                    border-radius: 30px;
+                    padding: 0px 30px;
+                    padding-top: 5px;
+                    background-color: #eee;
+                    display: inline-block;
+
+                    li{
+                        display: inline-block;
+                        text-transform: uppercase;
+                        padding: 12px;
+                        font-size: 13px;
+                        border-left: 1px solid #ccc;
+                        border-bottom: 3px solid #eee;
+                        cursor: pointer;
+                        color: #555;
+                    }
+
+                    li:first-child{
+                        border-left: 0;
+                    }
+
+                    li:hover, .active{
+                        border-bottom: 3px solid $primary-color;
+
+                    }
                 }
             }
         }
