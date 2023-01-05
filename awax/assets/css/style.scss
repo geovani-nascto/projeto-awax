@@ -258,7 +258,9 @@ main{
             .projects{
                 display: flex;
                 flex-direction: column;
-                margin: auto;
+                //margin: auto;
+                //Só funciona sem o align o photos
+                align-items: center;
 
                 .projects-filters{
                     border: 1px solid #ccc;
@@ -286,6 +288,18 @@ main{
                     li:hover, .active{
                         border-bottom: 3px solid $primary-color;
 
+                    }
+                }
+
+                .photos{
+                    background-color: red;
+                    width: 100vw;
+                    @include container();
+                    flex-wrap: wrap;
+                    margin-top: 30px;
+
+                    .photo{
+                        width: 280px;
                     }
                 }
             }
