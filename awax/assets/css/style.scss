@@ -312,6 +312,23 @@ main{
                                 position: absolute;
                                 width: inherit;
                                 height: inherit;
+                                background-color: rgba(0, 0, 0, 0.5);
+                                color: #fff;
+                                display: none;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+
+                                h4{
+                                    text-transform: uppercase;
+                                    font-size: 22px;
+                                    font-weight: 600;
+                                    margin-bottom: 12px;
+                                }
+
+                                p{
+                                    text-align: center;
+                                }
                             }
 
                             img{
@@ -319,7 +336,20 @@ main{
                                 height: inherit;
                             }
                         }
+
+                        .photo-area:hover{
+
+                            .photo-desc{
+                                display: flex;
+                            }
+                        }
                     }
+                }
+
+                a{
+                    @include button();
+                    padding: 15px 50px;
+                    border-radius: 20px;
                 }
             }
         }
@@ -333,5 +363,26 @@ main{
     .dark{
         background-color: #000;
         color: #fff;
+    }
+
+    .bg{
+        background-image: url(../img/icons/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+        /*Zerando o padding 50px 0 do default*/
+
+        .team-area{
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 50px 0;
+            /*Recolocando o padding para o bg-color pegar não só a div como "inline", mas todo o bg*/
+
+            .section-body{
+
+                .team{
+
+                }
+            }
+        }
     }
 }

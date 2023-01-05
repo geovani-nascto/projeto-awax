@@ -366,11 +366,57 @@ main .default .section-body .projects .photos .photo .photo-area .photo-desc {
   position: absolute;
   width: inherit;
   height: inherit;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .default .section-body .projects .photos .photo .photo-area .photo-desc h4 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+main .default .section-body .projects .photos .photo .photo-area .photo-desc p {
+  text-align: center;
 }
 
 main .default .section-body .projects .photos .photo .photo-area img {
   width: inherit;
   height: inherit;
+}
+
+main .default .section-body .projects .photos .photo .photo-area:hover .photo-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .default .section-body .projects a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  /*Usar propriedades de largura e tudo mais*/
+  background-color: #B28756;
+  padding: 15px 30px;
+  border-radius: 15px;
+  margin-top: 40px;
+  font-size: 12px;
+  padding: 15px 50px;
+  border-radius: 20px;
 }
 
 main .light {
@@ -381,5 +427,19 @@ main .light {
 main .dark {
   background-color: #000;
   color: #fff;
+}
+
+main .bg {
+  background-image: url(../img/icons/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  /*Zerando o padding 50px 0 do default*/
+}
+
+main .bg .team-area {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 50px 0;
+  /*Recolocando o padding para o bg-color pegar não só a div como "inline", mas todo o bg*/
 }
 /*# sourceMappingURL=style.css.map */
