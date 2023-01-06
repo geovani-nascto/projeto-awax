@@ -462,11 +462,11 @@ main .bg .team-area .section-body .team .sliders .slide {
   display: inline-block;
   /*inline-block deixa tudo na mesma linha (inline), mas com as propriedades de altura/largura como se fosse display block*/
   background-color: #fff;
+  border-radius: 2px;
 }
 
 main .bg .team-area .section-body .team .sliders .slide .slider-area {
   height: 100%;
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,41 +480,48 @@ main .bg .team-area .section-body .team .sliders .slide .slider-area {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #000;
+  padding: 30px;
 }
 
-main .bg .team-area .section-body .team .sliders .slide .slider-area h1 {
-  font-size: 60px;
+main .bg .team-area .section-body .team .sliders .slide .slider-area img {
+  width: 150px;
+}
+
+main .bg .team-area .section-body .team .sliders .slide .slider-area .team-name {
+  font-size: 17px;
+  font-weight: 600;
   text-transform: uppercase;
-  color: #fff;
+  margin-top: 25px;
 }
 
-main .bg .team-area .section-body .team .sliders .slide .slider-area h1 span {
-  color: #B28756;
-  font-size: 66px;
-}
-
-main .bg .team-area .section-body .team .sliders .slide .slider-area h2 {
-  color: #fff;
+main .bg .team-area .section-body .team .sliders .slide .slider-area .team-work {
+  margin: 5px 0 25px 0;
+  font-size: 14px;
+  color: #4b4b4b;
   text-transform: uppercase;
-  font-size: 22px;
-  margin-top: 10px;
 }
 
-main .bg .team-area .section-body .team .sliders .slide .slider-area a {
+main .bg .team-area .section-body .team .sliders .slide .slider-area .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .bg .team-area .section-body .team .sliders .slide .slider-area .social a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: inline-block;
-  /*Usar propriedades de largura e tudo mais*/
-  background-color: #B28756;
-  padding: 15px 30px;
-  border-radius: 15px;
-  margin-top: 40px;
-  font-size: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  padding: 8px;
+  margin: 0px 3px;
+  font-size: 18px;
 }
 
-main .bg .team-area .section-body .team .sliders .slide .slider-area a:hover {
+main .bg .team-area .section-body .team .sliders .slide .slider-area .social a:hover {
   background-color: #be9361;
 }
 
