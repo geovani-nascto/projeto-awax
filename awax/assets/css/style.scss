@@ -479,38 +479,55 @@ main{
             }
         }
     }
+}
 
-    .comments{
-        padding: 0;
-        
-        .feedbacks{
-            padding: 50px 0;
 
-            .clients{
 
-                .sliders{
-                    width: 1000vw;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.comments{
+    padding: 0;
+    
+    .feedbacks{
+        padding: 50px 0;
+
+        .clients{
+
+            .sliders{
+                width: 1000vw;
+                height: 100%;
+    
+                .slide{
+                    width: 100vw;
                     height: 100%;
-        
-                    .slide{
-                        width: 100vw;
+                    display: inline-block;
+                    /*inline-block deixa tudo na mesma linha (inline), mas com as propriedades de altura/largura como se fosse display block*/
+                    //background-color: #fff;
+                    /*
+                    .slider-area{
                         height: 100%;
-                        display: inline-block;
-                        /*inline-block deixa tudo na mesma linha (inline), mas com as propriedades de altura/largura como se fosse display block*/
-                        //background-color: #fff;
-        
-                        .slider-area{
-                            height: 100%;
-                            width: 100vw;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            text-align: center;
-                        }
+                        width: 100vw;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
                     }
                 }
             }
         }
     }
-}
+}*/
