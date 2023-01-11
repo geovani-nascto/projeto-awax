@@ -353,6 +353,66 @@ main{
                 }
             }
 
+            .price-table{
+                display: flex;
+                flex-wrap: wrap;
+                //margin: 0 auto;
+
+                .info-price{
+                    text-align: center;
+                    flex: 1;
+                    padding: 35px;
+                    background-color: #fff;
+                    //box-shadow: -3px 0px 69px 11px rgba(0,0,0,0.51);
+                    //border: 2px solid #ccc;
+                    border-radius: 10px;
+                    margin-right: 35px;
+
+                    .table-type{
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 16px;
+                        margin-bottom: 15px;
+                    }
+
+                    .table-price{
+                        font-weight: 700;
+                        font-size: 30px;
+                    }
+
+                    .table-month{
+                        color: #999;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        margin-bottom: 20px;
+                    }
+
+                    .table-info{
+                        font-size: 13px;
+                    }
+
+                    a{
+                        background-color: #000;
+                        color: #fff;
+                        padding: 15px 35px;
+                        display: inline-block;
+                        text-decoration: none;
+                        border-radius: 20px;
+                        font-weight: 700;
+                        margin-top: 25px;
+                        transition: 0.3s;
+                    }
+
+                    a:hover, .active{
+                        background-color: $primary-color;
+                    }
+                }
+
+                .info-price:last-child{
+                    margin-right: 0;
+                }
+            }
+
         }
     }
 
@@ -556,6 +616,30 @@ main{
                     .active{
                         background-color: $primary-color;
                     }
+                }
+            }
+        }
+    }
+
+    .enterprises{
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        //box-shadow: 5px 5px 0px #000;
+        box-shadow: 0px 22px 40px -4px rgba(0,0,0,0.51);
+
+
+        .section-body{
+
+            .brands{
+                display: flex;
+                flex: 1;
+                text-align: center;
+
+                .brand-area{
+                    flex: 1;
+                    flex-wrap: wrap;
+
                 }
             }
         }

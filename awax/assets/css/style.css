@@ -419,6 +419,69 @@ main .default .section-body .projects a {
   border-radius: 20px;
 }
 
+main .default .section-body .price-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .default .section-body .price-table .info-price {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 35px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-right: 35px;
+}
+
+main .default .section-body .price-table .info-price .table-type {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+main .default .section-body .price-table .info-price .table-price {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+main .default .section-body .price-table .info-price .table-month {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+main .default .section-body .price-table .info-price .table-info {
+  font-size: 13px;
+}
+
+main .default .section-body .price-table .info-price a {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 35px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-top: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .default .section-body .price-table .info-price a:hover, main .default .section-body .price-table .info-price .active {
+  background-color: #B28756;
+}
+
+main .default .section-body .price-table .info-price:last-child {
+  margin-right: 0;
+}
+
 main .light {
   background-color: #f7f7f7;
   color: #000;
@@ -639,6 +702,32 @@ main #feedback .section-body .feedback .sliders-pointers .pointers {
 main #feedback .section-body .feedback .sliders-pointers .pointers:hover,
 main #feedback .section-body .feedback .sliders-pointers .active {
   background-color: #B28756;
+}
+
+main .enterprises {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-shadow: 0px 22px 40px -4px rgba(0, 0, 0, 0.51);
+          box-shadow: 0px 22px 40px -4px rgba(0, 0, 0, 0.51);
+}
+
+main .enterprises .section-body .brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+main .enterprises .section-body .brands .brand-area {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /*
