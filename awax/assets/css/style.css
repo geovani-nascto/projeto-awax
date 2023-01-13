@@ -261,14 +261,14 @@ main .default .section-body .about-us .aboutus-right img {
           box-shadow: 0 10px 15px rgba(51, 51, 51, 0.418);
 }
 
-main .default .section-body .services {
+main .default .section-body .services, main .default .section-body .section-facts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   /*Se não tivesse display flex e max-width do container, bastava usar um text-align*/
 }
 
-main .default .section-body .services .service {
+main .default .section-body .services .service, main .default .section-body .services .fact, main .default .section-body .section-facts .service, main .default .section-body .section-facts .fact {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -277,22 +277,22 @@ main .default .section-body .services .service {
   padding: 15px;
 }
 
-main .default .section-body .services .service img {
+main .default .section-body .services .service img, main .default .section-body .services .fact img, main .default .section-body .section-facts .service img, main .default .section-body .section-facts .fact img {
   width: 59px;
 }
 
-main .default .section-body .services .service h2 {
+main .default .section-body .services .service h2, main .default .section-body .services .fact h2, main .default .section-body .section-facts .service h2, main .default .section-body .section-facts .fact h2 {
   text-transform: uppercase;
   font-size: 20px;
   margin: 30px 0 10px 0;
 }
 
-main .default .section-body .services .service p {
+main .default .section-body .services .service p, main .default .section-body .services .fact p, main .default .section-body .section-facts .service p, main .default .section-body .section-facts .fact p {
   font-size: 15px;
   color: #5f5e5e;
 }
 
-main .default .section-body .services .service:first-child {
+main .default .section-body .services .service:first-child, main .default .section-body .section-facts .service:first-child {
   border-left: 1px solid #494949;
 }
 
@@ -482,6 +482,27 @@ main .default .section-body .price-table .info-price:last-child {
   margin-right: 0;
 }
 
+main .default .section-body .section-facts .fact {
+  border: none;
+}
+
+main .default .section-body .section-facts .fact h1 {
+  color: #B28756;
+  font-size: 55px;
+}
+
+main .default .section-body .section-facts .fact .line-fact {
+  margin: auto;
+  width: 20px;
+  height: 3px;
+  background-color: #999;
+  margin-bottom: 7px;
+}
+
+main .default .section-body .section-facts .fact h2 {
+  margin-top: 0;
+}
+
 main .light {
   background-color: #f7f7f7;
   color: #000;
@@ -616,25 +637,25 @@ main .bg .team-area .section-body .team .sliders-pointers .active {
   background-color: #B28756;
 }
 
-main #feedback .section-body {
+main #feedback .section-body, main .package .section-body {
   max-width: initial;
 }
 
-main #feedback .section-body .feedback {
+main #feedback .section-body .feedback, main #feedback .section-body .section-package, main .package .section-body .feedback, main .package .section-body .section-package {
   overflow: hidden;
 }
 
-main #feedback .section-body .feedback .sliders {
+main #feedback .section-body .feedback .sliders, main #feedback .section-body .section-package .sliders, main .package .section-body .feedback .sliders, main .package .section-body .section-package .sliders {
   width: 1000vw;
 }
 
-main #feedback .section-body .feedback .sliders .slide {
+main #feedback .section-body .feedback .sliders .slide, main #feedback .section-body .section-package .sliders .slide, main .package .section-body .feedback .sliders .slide, main .package .section-body .section-package .sliders .slide {
   width: 100vw;
   height: 100%;
   display: inline-block;
 }
 
-main #feedback .section-body .feedback .sliders .slide .slider-area {
+main #feedback .section-body .feedback .sliders .slide .slider-area, main #feedback .section-body .section-package .sliders .slide .slider-area, main .package .section-body .feedback .sliders .slide .slider-area, main .package .section-body .section-package .sliders .slide .slider-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,22 +672,22 @@ main #feedback .section-body .feedback .sliders .slide .slider-area {
   height: 100%;
 }
 
-main #feedback .section-body .feedback .sliders .slide .slider-area .client-img {
+main #feedback .section-body .feedback .sliders .slide .slider-area .client-img, main #feedback .section-body .section-package .sliders .slide .slider-area .client-img, main .package .section-body .feedback .sliders .slide .slider-area .client-img, main .package .section-body .section-package .sliders .slide .slider-area .client-img {
   margin-top: 20px;
 }
 
-main #feedback .section-body .feedback .sliders .slide .slider-area .client-name {
+main #feedback .section-body .feedback .sliders .slide .slider-area .client-name, main #feedback .section-body .section-package .sliders .slide .slider-area .client-name, main .package .section-body .feedback .sliders .slide .slider-area .client-name, main .package .section-body .section-package .sliders .slide .slider-area .client-name {
   font-weight: 700;
   font-size: 22px;
   margin: 30px 0 5px 0;
 }
 
-main #feedback .section-body .feedback .sliders .slide .slider-area .client-work {
+main #feedback .section-body .feedback .sliders .slide .slider-area .client-work, main #feedback .section-body .section-package .sliders .slide .slider-area .client-work, main .package .section-body .feedback .sliders .slide .slider-area .client-work, main .package .section-body .section-package .sliders .slide .slider-area .client-work {
   font-weight: 600;
   margin-bottom: 30px;
 }
 
-main #feedback .section-body .feedback .sliders .slide .slider-area .opinion {
+main #feedback .section-body .feedback .sliders .slide .slider-area .opinion, main #feedback .section-body .section-package .sliders .slide .slider-area .opinion, main .package .section-body .feedback .sliders .slide .slider-area .opinion, main .package .section-body .section-package .sliders .slide .slider-area .opinion {
   text-align: center;
   font-size: 14px;
   max-width: 700px;
@@ -675,7 +696,7 @@ main #feedback .section-body .feedback .sliders .slide .slider-area .opinion {
   margin: 15px 30px 0 30px;
 }
 
-main #feedback .section-body .feedback .sliders-pointers {
+main #feedback .section-body .feedback .sliders-pointers, main #feedback .section-body .section-package .sliders-pointers, main .package .section-body .feedback .sliders-pointers, main .package .section-body .section-package .sliders-pointers {
   width: 100vw;
   height: 20px;
   display: -webkit-box;
@@ -690,7 +711,7 @@ main #feedback .section-body .feedback .sliders-pointers {
   margin-top: 40px;
 }
 
-main #feedback .section-body .feedback .sliders-pointers .pointers {
+main #feedback .section-body .feedback .sliders-pointers .pointers, main #feedback .section-body .section-package .sliders-pointers .pointers, main .package .section-body .feedback .sliders-pointers .pointers, main .package .section-body .section-package .sliders-pointers .pointers {
   width: 20px;
   height: 20px;
   border: 2px solid #B28756;
@@ -700,7 +721,10 @@ main #feedback .section-body .feedback .sliders-pointers .pointers {
 }
 
 main #feedback .section-body .feedback .sliders-pointers .pointers:hover,
-main #feedback .section-body .feedback .sliders-pointers .active {
+main #feedback .section-body .feedback .sliders-pointers .active, main #feedback .section-body .section-package .sliders-pointers .pointers:hover,
+main #feedback .section-body .section-package .sliders-pointers .active, main .package .section-body .feedback .sliders-pointers .pointers:hover,
+main .package .section-body .feedback .sliders-pointers .active, main .package .section-body .section-package .sliders-pointers .pointers:hover,
+main .package .section-body .section-package .sliders-pointers .active {
   background-color: #B28756;
 }
 
@@ -728,6 +752,125 @@ main .enterprises .section-body .brands .brand-area {
           flex: 1;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+main .package {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+main .package .section-body .section-package {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .package .section-body .section-package .sliders {
+  width: 1000vw;
+}
+
+main .package .section-body .section-package .sliders .slide {
+  width: 100vw;
+  height: 100%;
+  display: inline-block;
+}
+
+main .package .section-body .section-package .sliders .slide .slider-area {
+  max-width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+main .package .section-body .section-package .sliders .slide .slider-area .package-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+main .package .section-body .section-package .sliders .slide .slider-area .package-left img {
+  width: 350px;
+  margin-right: 30px;
+}
+
+main .package .section-body .section-package .sliders .slide .slider-area .package-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options p, main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options ul {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options ul {
+  list-style-type: disc;
+  margin-bottom: 20px;
+}
+
+main .package .section-body .section-package .button {
+  margin: auto;
+}
+
+main .package .section-body .section-package .button a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  /*Usar propriedades de largura e tudo mais*/
+  background-color: #B28756;
+  padding: 15px 30px;
+  border-radius: 15px;
+  margin-top: 40px;
+  font-size: 12px;
+  display: inline-block;
 }
 
 /*
