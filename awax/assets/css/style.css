@@ -854,6 +854,12 @@ main .package .section-body .section-package .sliders .slide .slider-area .packa
   margin-bottom: 20px;
 }
 
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options ul li {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+
 main .package .section-body .section-package .button {
   margin: auto;
 }
@@ -871,6 +877,76 @@ main .package .section-body .section-package .button a {
   margin-top: 40px;
   font-size: 12px;
   display: inline-block;
+}
+
+main .share-midias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+main .share-midias .share-icon, main .share-midias .midias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  color: #b4b4b4;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .share-midias .share-icon {
+  margin-right: 50px;
+}
+
+main .share-midias .share-icon img {
+  margin-right: 15px;
+}
+
+main .share-midias .share-icon h4 {
+  font-size: 14px;
+}
+
+main .share-midias .midias i {
+  background-color: darkcyan;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  border: 0;
+  outline: 0;
+}
+
+main .share-midias .midias .fa-twitter {
+  background-color: #34c6ef;
+}
+
+main .share-midias .midias .fa-linkedin-in {
+  background-color: #127bb4;
+}
+
+main .share-midias .midias .fa-facebook {
+  background-color: #326197;
+}
+
+main .share-midias .midias .fa-instagram {
+  background-color: #cd486b;
+}
+
+main .share-midias .midias .fa-pinterest {
+  background-color: #b71d29;
+}
+
+main .share-midias .midias h6 {
+  margin: 0 35px 0 7px;
+  font-size: 13px;
 }
 
 /*
