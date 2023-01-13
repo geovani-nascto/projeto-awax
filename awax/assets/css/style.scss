@@ -930,7 +930,58 @@ main{
     }
 }
 
+footer{
+    background-color: #000;
+    padding: 30px;
+    color: #fff;
 
+    .footer-area{
+        @include container();
+        margin: auto;
+
+        .footer-social, .footer-about, .footer-form{
+            flex: 1;
+        }
+
+        .footer-social{
+            //background-color: royalblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            i{
+                padding: 12px;
+                background-color: #444;
+                border-radius: 50%;
+                font-size: 18px;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+
+            i:hover, .active{
+                background-color: $primary-color;
+            }
+
+            span{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+
+        .footer-about{
+            //background-color: red;
+            font-size: 14px;
+            padding: 0 25px;
+            color: #888;
+        }
+
+        .footer-form{
+            background-color: #444;
+            border-radius: 5px;
+        }
+    }
+}
 
 
 
