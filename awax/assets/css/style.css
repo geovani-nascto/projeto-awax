@@ -503,8 +503,67 @@ main .default .section-body .section-facts .fact h2 {
   margin-top: 0;
 }
 
+main .default .section-body .section-contact {
+  margin: auto;
+}
+
+main .default .section-body .section-contact form {
+  width: 550px;
+  max-width: 550px;
+}
+
+main .default .section-body .section-contact form .inputs-name-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .default .section-body .section-contact form .inputs-name-email input:first-child {
+  margin-right: 20px;
+}
+
+main .default .section-body .section-contact form .inputs {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  margin-top: 10px;
+}
+
+main .default .section-body .section-contact form textarea {
+  height: 100px;
+  resize: none;
+}
+
+main .default .section-body .section-contact form .button-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .default .section-body .section-contact form .button-form input[type=submit] {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  /*Usar propriedades de largura e tudo mais*/
+  background-color: #B28756;
+  padding: 15px 30px;
+  border-radius: 15px;
+  margin-top: 40px;
+  font-size: 12px;
+  border: 0;
+}
+
 main .light {
-  background-color: #f7f7f7;
+  background-color: #ededed;
   color: #000;
 }
 
@@ -922,6 +981,7 @@ main .share-midias .midias i {
   font-size: 20px;
   border: 0;
   outline: 0;
+  cursor: pointer;
 }
 
 main .share-midias .midias .fa-twitter {
