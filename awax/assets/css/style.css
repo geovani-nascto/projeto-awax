@@ -560,24 +560,19 @@ main .default .section-body .section-contact form .button-form input[type=submit
   margin-top: 40px;
   font-size: 12px;
   border: 0;
-  cursor: pointer;
 }
 
-main .default .section-body .section-contact form .button-form input[type=submit]:hover {
-  background-color: #B28756;
-}
-
-main .default .light {
+main .light {
   background-color: #ededed;
   color: #000;
 }
 
-main .default .dark {
+main .dark {
   background-color: #000;
   color: #fff;
 }
 
-main .default .bg {
+main .bg {
   background-image: url(../img/icons/bg.jpg);
   background-size: cover;
   background-position: center;
@@ -585,24 +580,24 @@ main .default .bg {
   /*Zerando o padding 50px 0 do default*/
 }
 
-main .default .bg .team-area {
+main .bg .team-area {
   background-color: rgba(0, 0, 0, 0.75);
   padding: 50px 0;
   /*Recolocando o padding para o bg-color pegar não só a div como "inline", mas todo o bg*/
 }
 
-main .default .bg .team-area .section-body .team {
+main .bg .team-area .section-body .team {
   overflow: hidden;
   max-width: 880px;
   margin: auto;
 }
 
-main .default .bg .team-area .section-body .team .sliders {
+main .bg .team-area .section-body .team .sliders {
   width: 1000vw;
   height: 100%;
 }
 
-main .default .bg .team-area .section-body .team .sliders .slide {
+main .bg .team-area .section-body .team .sliders .slide {
   width: 280px;
   height: 100%;
   min-height: 300px;
@@ -613,7 +608,7 @@ main .default .bg .team-area .section-body .team .sliders .slide {
   border-radius: 2px;
 }
 
-main .default .bg .team-area .section-body .team .sliders .slide .slider-area {
+main .bg .team-area .section-body .team .sliders .slide .slider-area {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -632,31 +627,31 @@ main .default .bg .team-area .section-body .team .sliders .slide .slider-area {
   padding: 30px;
 }
 
-main .default .bg .team-area .section-body .team .sliders .slide .slider-area img {
+main .bg .team-area .section-body .team .sliders .slide .slider-area img {
   width: 150px;
 }
 
-main .default .bg .team-area .section-body .team .sliders .slide .slider-area .team-name {
+main .bg .team-area .section-body .team .sliders .slide .slider-area .team-name {
   font-size: 17px;
   font-weight: 600;
   text-transform: uppercase;
   margin-top: 25px;
 }
 
-main .default .bg .team-area .section-body .team .sliders .slide .slider-area .team-work {
+main .bg .team-area .section-body .team .sliders .slide .slider-area .team-work {
   margin: 5px 0 25px 0;
   font-size: 14px;
   color: #4b4b4b;
   text-transform: uppercase;
 }
 
-main .default .bg .team-area .section-body .team .sliders .slide .slider-area .social {
+main .bg .team-area .section-body .team .sliders .slide .slider-area .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .default .bg .team-area .section-body .team .sliders .slide .slider-area .social a {
+main .bg .team-area .section-body .team .sliders .slide .slider-area .social a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -669,11 +664,11 @@ main .default .bg .team-area .section-body .team .sliders .slide .slider-area .s
   font-size: 18px;
 }
 
-main .default .bg .team-area .section-body .team .sliders .slide .slider-area .social a:hover {
+main .bg .team-area .section-body .team .sliders .slide .slider-area .social a:hover {
   background-color: #be9361;
 }
 
-main .default .bg .team-area .section-body .team .sliders-pointers {
+main .bg .team-area .section-body .team .sliders-pointers {
   margin-top: 30px;
   height: 20px;
   display: -webkit-box;
@@ -687,7 +682,7 @@ main .default .bg .team-area .section-body .team .sliders-pointers {
           align-items: center;
 }
 
-main .default .bg .team-area .section-body .team .sliders-pointers .pointers {
+main .bg .team-area .section-body .team .sliders-pointers .pointers {
   width: 20px;
   height: 20px;
   border: 2px solid #B28756;
@@ -696,30 +691,30 @@ main .default .bg .team-area .section-body .team .sliders-pointers .pointers {
   cursor: pointer;
 }
 
-main .default .bg .team-area .section-body .team .sliders-pointers .pointers:hover,
-main .default .bg .team-area .section-body .team .sliders-pointers .active {
+main .bg .team-area .section-body .team .sliders-pointers .pointers:hover,
+main .bg .team-area .section-body .team .sliders-pointers .active {
   background-color: #B28756;
 }
 
-main .default #feedback .section-body, main .default .package .section-body {
+main #feedback .section-body, main .package .section-body {
   max-width: initial;
 }
 
-main .default #feedback .section-body .feedback, main .default #feedback .section-body .section-package, main .default .package .section-body .feedback, main .default .package .section-body .section-package {
+main #feedback .section-body .feedback, main #feedback .section-body .section-package, main .package .section-body .feedback, main .package .section-body .section-package {
   overflow: hidden;
 }
 
-main .default #feedback .section-body .feedback .sliders, main .default #feedback .section-body .section-package .sliders, main .default .package .section-body .feedback .sliders, main .default .package .section-body .section-package .sliders {
+main #feedback .section-body .feedback .sliders, main #feedback .section-body .section-package .sliders, main .package .section-body .feedback .sliders, main .package .section-body .section-package .sliders {
   width: 1000vw;
 }
 
-main .default #feedback .section-body .feedback .sliders .slide, main .default #feedback .section-body .section-package .sliders .slide, main .default .package .section-body .feedback .sliders .slide, main .default .package .section-body .section-package .sliders .slide {
+main #feedback .section-body .feedback .sliders .slide, main #feedback .section-body .section-package .sliders .slide, main .package .section-body .feedback .sliders .slide, main .package .section-body .section-package .sliders .slide {
   width: 100vw;
   height: 100%;
   display: inline-block;
 }
 
-main .default #feedback .section-body .feedback .sliders .slide .slider-area, main .default #feedback .section-body .section-package .sliders .slide .slider-area, main .default .package .section-body .feedback .sliders .slide .slider-area, main .default .package .section-body .section-package .sliders .slide .slider-area {
+main #feedback .section-body .feedback .sliders .slide .slider-area, main #feedback .section-body .section-package .sliders .slide .slider-area, main .package .section-body .feedback .sliders .slide .slider-area, main .package .section-body .section-package .sliders .slide .slider-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -736,22 +731,22 @@ main .default #feedback .section-body .feedback .sliders .slide .slider-area, ma
   height: 100%;
 }
 
-main .default #feedback .section-body .feedback .sliders .slide .slider-area .client-img, main .default #feedback .section-body .section-package .sliders .slide .slider-area .client-img, main .default .package .section-body .feedback .sliders .slide .slider-area .client-img, main .default .package .section-body .section-package .sliders .slide .slider-area .client-img {
+main #feedback .section-body .feedback .sliders .slide .slider-area .client-img, main #feedback .section-body .section-package .sliders .slide .slider-area .client-img, main .package .section-body .feedback .sliders .slide .slider-area .client-img, main .package .section-body .section-package .sliders .slide .slider-area .client-img {
   margin-top: 20px;
 }
 
-main .default #feedback .section-body .feedback .sliders .slide .slider-area .client-name, main .default #feedback .section-body .section-package .sliders .slide .slider-area .client-name, main .default .package .section-body .feedback .sliders .slide .slider-area .client-name, main .default .package .section-body .section-package .sliders .slide .slider-area .client-name {
+main #feedback .section-body .feedback .sliders .slide .slider-area .client-name, main #feedback .section-body .section-package .sliders .slide .slider-area .client-name, main .package .section-body .feedback .sliders .slide .slider-area .client-name, main .package .section-body .section-package .sliders .slide .slider-area .client-name {
   font-weight: 700;
   font-size: 22px;
   margin: 30px 0 5px 0;
 }
 
-main .default #feedback .section-body .feedback .sliders .slide .slider-area .client-work, main .default #feedback .section-body .section-package .sliders .slide .slider-area .client-work, main .default .package .section-body .feedback .sliders .slide .slider-area .client-work, main .default .package .section-body .section-package .sliders .slide .slider-area .client-work {
+main #feedback .section-body .feedback .sliders .slide .slider-area .client-work, main #feedback .section-body .section-package .sliders .slide .slider-area .client-work, main .package .section-body .feedback .sliders .slide .slider-area .client-work, main .package .section-body .section-package .sliders .slide .slider-area .client-work {
   font-weight: 600;
   margin-bottom: 30px;
 }
 
-main .default #feedback .section-body .feedback .sliders .slide .slider-area .opinion, main .default #feedback .section-body .section-package .sliders .slide .slider-area .opinion, main .default .package .section-body .feedback .sliders .slide .slider-area .opinion, main .default .package .section-body .section-package .sliders .slide .slider-area .opinion {
+main #feedback .section-body .feedback .sliders .slide .slider-area .opinion, main #feedback .section-body .section-package .sliders .slide .slider-area .opinion, main .package .section-body .feedback .sliders .slide .slider-area .opinion, main .package .section-body .section-package .sliders .slide .slider-area .opinion {
   text-align: center;
   font-size: 14px;
   max-width: 700px;
@@ -760,7 +755,7 @@ main .default #feedback .section-body .feedback .sliders .slide .slider-area .op
   margin: 15px 30px 0 30px;
 }
 
-main .default #feedback .section-body .feedback .sliders-pointers, main .default #feedback .section-body .section-package .sliders-pointers, main .default .package .section-body .feedback .sliders-pointers, main .default .package .section-body .section-package .sliders-pointers {
+main #feedback .section-body .feedback .sliders-pointers, main #feedback .section-body .section-package .sliders-pointers, main .package .section-body .feedback .sliders-pointers, main .package .section-body .section-package .sliders-pointers {
   width: 100vw;
   height: 20px;
   display: -webkit-box;
@@ -775,7 +770,7 @@ main .default #feedback .section-body .feedback .sliders-pointers, main .default
   margin-top: 40px;
 }
 
-main .default #feedback .section-body .feedback .sliders-pointers .pointers, main .default #feedback .section-body .section-package .sliders-pointers .pointers, main .default .package .section-body .feedback .sliders-pointers .pointers, main .default .package .section-body .section-package .sliders-pointers .pointers {
+main #feedback .section-body .feedback .sliders-pointers .pointers, main #feedback .section-body .section-package .sliders-pointers .pointers, main .package .section-body .feedback .sliders-pointers .pointers, main .package .section-body .section-package .sliders-pointers .pointers {
   width: 20px;
   height: 20px;
   border: 2px solid #B28756;
@@ -784,15 +779,15 @@ main .default #feedback .section-body .feedback .sliders-pointers .pointers, mai
   cursor: pointer;
 }
 
-main .default #feedback .section-body .feedback .sliders-pointers .pointers:hover,
-main .default #feedback .section-body .feedback .sliders-pointers .active, main .default #feedback .section-body .section-package .sliders-pointers .pointers:hover,
-main .default #feedback .section-body .section-package .sliders-pointers .active, main .default .package .section-body .feedback .sliders-pointers .pointers:hover,
-main .default .package .section-body .feedback .sliders-pointers .active, main .default .package .section-body .section-package .sliders-pointers .pointers:hover,
-main .default .package .section-body .section-package .sliders-pointers .active {
+main #feedback .section-body .feedback .sliders-pointers .pointers:hover,
+main #feedback .section-body .feedback .sliders-pointers .active, main #feedback .section-body .section-package .sliders-pointers .pointers:hover,
+main #feedback .section-body .section-package .sliders-pointers .active, main .package .section-body .feedback .sliders-pointers .pointers:hover,
+main .package .section-body .feedback .sliders-pointers .active, main .package .section-body .section-package .sliders-pointers .pointers:hover,
+main .package .section-body .section-package .sliders-pointers .active {
   background-color: #B28756;
 }
 
-main .default .enterprises {
+main .enterprises {
   background-color: #fff;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
@@ -800,7 +795,7 @@ main .default .enterprises {
           box-shadow: 0px 22px 40px -4px rgba(0, 0, 0, 0.51);
 }
 
-main .default .enterprises .section-body .brands {
+main .enterprises .section-body .brands {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,7 +805,7 @@ main .default .enterprises .section-body .brands {
   text-align: center;
 }
 
-main .default .enterprises .section-body .brands .brand-area {
+main .enterprises .section-body .brands .brand-area {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -818,12 +813,12 @@ main .default .enterprises .section-body .brands .brand-area {
       flex-wrap: wrap;
 }
 
-main .default .package {
+main .package {
   background-color: #fff;
   border-top: 1px solid #ccc;
 }
 
-main .default .package .section-body .section-package {
+main .package .section-body .section-package {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -833,17 +828,17 @@ main .default .package .section-body .section-package {
           flex-direction: column;
 }
 
-main .default .package .section-body .section-package .sliders {
+main .package .section-body .section-package .sliders {
   width: 1000vw;
 }
 
-main .default .package .section-body .section-package .sliders .slide {
+main .package .section-body .section-package .sliders .slide {
   width: 100vw;
   height: 100%;
   display: inline-block;
 }
 
-main .default .package .section-body .section-package .sliders .slide .slider-area {
+main .package .section-body .section-package .sliders .slide .slider-area {
   max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,71 +859,71 @@ main .default .package .section-body .section-package .sliders .slide .slider-ar
   margin: auto;
 }
 
-main .default .package .section-body .section-package .sliders .slide .slider-area .package-left {
+main .package .section-body .section-package .sliders .slide .slider-area .package-left {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: center;
 }
 
-main .default .package .section-body .section-package .sliders .slide .slider-area .package-left img {
+main .package .section-body .section-package .sliders .slide .slider-area .package-left img {
   width: 350px;
   margin-right: 30px;
 }
 
-main .default .package .section-body .section-package .sliders .slide .slider-area .package-right {
+main .package .section-body .section-package .sliders .slide .slider-area .package-right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-main .default .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature {
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .default .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature img {
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature img {
   width: 20px;
   height: 20px;
   margin-right: 20px;
 }
 
-main .default .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options {
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-main .default .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options h2 {
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options h2 {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-main .default .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options p, main .default .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options ul {
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options p, main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options ul {
   color: #555;
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-main .default .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options ul {
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options ul {
   list-style-type: disc;
   margin-bottom: 20px;
 }
 
-main .default .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options ul li {
+main .package .section-body .section-package .sliders .slide .slider-area .package-right .container-feature .feature-options ul li {
   font-size: 14px;
   text-transform: uppercase;
   line-height: 25px;
 }
 
-main .default .package .section-body .section-package .button {
+main .package .section-body .section-package .button {
   margin: auto;
 }
 
-main .default .package .section-body .section-package .button a {
+main .package .section-body .section-package .button a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -943,7 +938,7 @@ main .default .package .section-body .section-package .button a {
   display: inline-block;
 }
 
-main .default .share-midias {
+main .share-midias {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -954,7 +949,7 @@ main .default .share-midias {
   border-bottom: 1px solid #ccc;
 }
 
-main .default .share-midias .share-icon, main .default .share-midias .midias {
+main .share-midias .share-icon, main .share-midias .midias {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -966,19 +961,19 @@ main .default .share-midias .share-icon, main .default .share-midias .midias {
           align-items: center;
 }
 
-main .default .share-midias .share-icon {
+main .share-midias .share-icon {
   margin-right: 50px;
 }
 
-main .default .share-midias .share-icon img {
+main .share-midias .share-icon img {
   margin-right: 15px;
 }
 
-main .default .share-midias .share-icon h4 {
+main .share-midias .share-icon h4 {
   font-size: 14px;
 }
 
-main .default .share-midias .midias i {
+main .share-midias .midias i {
   background-color: darkcyan;
   padding: 10px;
   border-radius: 50%;
@@ -989,32 +984,32 @@ main .default .share-midias .midias i {
   cursor: pointer;
 }
 
-main .default .share-midias .midias .fa-twitter {
+main .share-midias .midias .fa-twitter {
   background-color: #34c6ef;
 }
 
-main .default .share-midias .midias .fa-linkedin-in {
+main .share-midias .midias .fa-linkedin-in {
   background-color: #127bb4;
 }
 
-main .default .share-midias .midias .fa-facebook {
+main .share-midias .midias .fa-facebook {
   background-color: #326197;
 }
 
-main .default .share-midias .midias .fa-instagram {
+main .share-midias .midias .fa-instagram {
   background-color: #cd486b;
 }
 
-main .default .share-midias .midias .fa-pinterest {
+main .share-midias .midias .fa-pinterest {
   background-color: #b71d29;
 }
 
-main .default .share-midias .midias h6 {
+main .share-midias .midias h6 {
   margin: 0 35px 0 7px;
   font-size: 13px;
 }
 
-main .default .section-map {
+main .section-map {
   background-image: url(../img/medias/mapa.jpg);
   background-size: cover;
   background-position: center;
@@ -1023,7 +1018,7 @@ main .default .section-map {
           filter: grayscale(100%);
 }
 
-main .default .section-map .section-maparea {
+main .section-map .section-maparea {
   width: 100vw;
   max-width: 1140px;
   display: -webkit-box;
@@ -1032,13 +1027,13 @@ main .default .section-map .section-maparea {
   margin: auto;
 }
 
-main .default .section-map .section-maparea .maparea-infos {
+main .section-map .section-maparea .maparea-infos {
   width: 50%;
   background-color: #fff;
   padding: 30px;
 }
 
-main .default .section-map .section-maparea .maparea-infos .infos-item {
+main .section-map .section-maparea .maparea-infos .infos-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1050,7 +1045,7 @@ main .default .section-map .section-maparea .maparea-infos .infos-item {
   font-size: 14px;
 }
 
-main .default .section-map .section-maparea .maparea-infos .infos-item .icon-infos {
+main .section-map .section-maparea .maparea-infos .infos-item .icon-infos {
   background-color: #999;
   width: 30px;
   height: 30px;
@@ -1067,18 +1062,18 @@ main .default .section-map .section-maparea .maparea-infos .infos-item .icon-inf
   margin-right: 15px;
 }
 
-main .default .section-map .section-maparea .maparea-infos .infos-item .icon-infos img {
+main .section-map .section-maparea .maparea-infos .infos-item .icon-infos img {
   width: 15px;
   height: auto;
 }
 
-main footer {
+footer {
   background-color: #000;
   padding: 30px;
   color: #fff;
 }
 
-main footer .footer-area {
+footer .footer-area {
   max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1086,13 +1081,13 @@ main footer .footer-area {
   margin: auto;
 }
 
-main footer .footer-area .footer-social, main footer .footer-area .footer-about, main footer .footer-area .footer-form {
+footer .footer-area .footer-social, footer .footer-area .footer-about, footer .footer-area .footer-form {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-main footer .footer-area .footer-social {
+footer .footer-area .footer-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1105,7 +1100,7 @@ main footer .footer-area .footer-social {
           justify-content: space-between;
 }
 
-main footer .footer-area .footer-social i {
+footer .footer-area .footer-social i {
   padding: 12px;
   background-color: #444;
   border-radius: 50%;
@@ -1115,109 +1110,58 @@ main footer .footer-area .footer-social i {
   cursor: pointer;
 }
 
-main footer .footer-area .footer-social i:hover, main footer .footer-area .footer-social .active {
+footer .footer-area .footer-social i:hover, footer .footer-area .footer-social .active {
   background-color: #B28756;
 }
 
-main footer .footer-area .footer-social span {
+footer .footer-area .footer-social span {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
 }
 
-main footer .footer-area .footer-about {
+footer .footer-area .footer-about {
   font-size: 14px;
   padding: 0 25px;
   color: #888;
 }
 
-main footer .footer-area .footer-form {
+footer .footer-area .footer-form {
   background-color: #444;
   border-radius: 5px;
 }
 
-main footer .footer-area .footer-form form {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main footer .footer-area .footer-form form input[type=email] {
-  border: 0;
-  height: 40px;
-  background-color: transparent;
-  border-bottom: 1px solid #ccc;
-  width: 70%;
-  margin-bottom: 20px;
-  outline: 0;
-  color: #fff;
-}
-
-main footer .footer-area .footer-form form ::-webkit-input-placeholder {
-  text-align: center;
-  color: #999;
-}
-
-main footer .footer-area .footer-form form :-ms-input-placeholder {
-  text-align: center;
-  color: #999;
-}
-
-main footer .footer-area .footer-form form ::-ms-input-placeholder {
-  text-align: center;
-  color: #999;
-}
-
-main footer .footer-area .footer-form form ::placeholder {
-  text-align: center;
-  color: #999;
-}
-
-main footer .footer-area .footer-form form input[type=submit] {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: inline-block;
-  /*Usar propriedades de largura e tudo mais*/
-  background-color: #B28756;
-  padding: 15px 30px;
-  border-radius: 15px;
-  margin-top: 40px;
-  font-size: 12px;
-  border: 0;
-  margin-top: 0;
-  width: 50%;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-main footer .footer-area .footer-form form input[type=submit]:hover {
-  background-color: #be9361;
-}
-
 /*
-@media (max-width: 1200px){
+.comments{
+    padding: 0;
+    
+    .feedbacks{
+        padding: 50px 0;
 
-    header .container .menu nav{
-        position: absolute;
-        background-color: rgb(0, 0, 0, 0.8);
-        z-index: 9;
-        width: 70%;
-        height: calc(100vh-100px);
-        top: 100px;
-        right: 0;
+        .clients{
+
+            .sliders{
+                width: 1000vw;
+                height: 100%;
+    
+                .slide{
+                    width: 100vw;
+                    height: 100%;
+                    display: inline-block;
+                    /*inline-block deixa tudo na mesma linha (inline), mas com as propriedades de altura/largura como se fosse display block*/
+/*
+                    .slider-area{
+                        height: 100%;
+                        width: 100vw;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 }*/
 /*# sourceMappingURL=style.css.map */
