@@ -1009,24 +1009,25 @@ footer{
 
                 
 
-                    input[type=submit]{
-                        @include button();
-                        border: 0;
-                        margin-top: 0;
-                        width: 50%;
-                        border-radius: 20px;
-                        cursor: pointer;
-                    }
+                input[type=submit]{
+                    @include button();
+                    border: 0;
+                    margin-top: 0;
+                    width: 50%;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
 
-                    input[type=submit]:hover{
-                        background-color: #be9361;
-                    }
-                
+                input[type=submit]:hover{
+                    background-color: #be9361;
+                }
+            
             }
+
         }
+
     }
 }
-
 
 
 
