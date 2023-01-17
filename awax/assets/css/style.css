@@ -1253,6 +1253,9 @@ footer .footer-area .footer-form form input[type="submit"]:hover {
     border: 0;
     color: #B28756;
   }
+  main .package .section-body .section-package .sliders .slide {
+    height: auto;
+  }
 }
 
 @media (min-width: 450px) and (max-width: 800px) {
@@ -1302,6 +1305,10 @@ footer .footer-area .footer-form form input[type="submit"]:hover {
   /*main .default .section-body .price-table .info-price:last-child{
         margin-right: 0;
     }*/
+  /*Ver se não bugou*/
+  main .package .section-body .section-package .sliders .slide {
+    height: auto;
+  }
   main .package .section-body .section-package .sliders .slide .slider-area {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1359,11 +1366,227 @@ footer .footer-area .footer-form form input[type="submit"]:hover {
   main .section-map .section-maparea .maparea-infos .infos-item:last-child {
     margin-bottom: 0;
   }
+  footer {
+    padding: 35px;
+  }
+  footer .footer-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .footer-area .footer-form {
+    padding: 50px;
+  }
+  footer .footer-area .footer-about {
+    padding: 0;
+    margin: 30px 0;
+  }
+  footer .footer-area .footer-form form input[type="email"] {
+    margin-bottom: 30px;
+  }
+  footer .footer-area .footer-social .midias-icon {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 550px) {
   header .container .menu nav ul li a {
     font-size: 21px;
+  }
+}
+
+@media (max-width: 450px) {
+  header .container .menu nav ul li a {
+    font-weight: 700;
+    font-size: 18px;
+    height: 60px;
+    margin-left: 30px;
+    border: 0;
+  }
+  main .banner .sliders .slide .slider-area h1 {
+    font-size: 30px;
+  }
+  main .banner .sliders .slide .slider-area h1 span {
+    font-size: 33px;
+  }
+  main .default .section-body .about-us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .default .section-body .about-us .aboutus-right {
+    width: auto;
+    margin: 0 30px;
+  }
+  main .default .section-body .about-us .aboutus-right img {
+    width: 100%;
+  }
+  main .default .section-body .about-us .aboutus-left {
+    padding: 30px;
+  }
+  .section-body .services {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section-body .service {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  main .default .section-body .projects .projects-filters {
+    margin: 0 30px;
+  }
+  main .default .section-body .projects .photos .photo {
+    width: 320px;
+  }
+  main .default .section-body .projects .photos .photo .photo-area {
+    width: 300px;
+    height: 190px;
+  }
+  main .bg .team-area .section-body .team {
+    max-width: 280px;
+  }
+  main .enterprises {
+    padding: 0;
+  }
+  main .enterprises .section-body .brands {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .enterprises .section-body .brands .brand-area {
+    min-width: 100%;
+    margin-bottom: 60px;
+  }
+  main .enterprises .section-body .brands .brand-area:first-child {
+    margin-top: 60px;
+  }
+  /*main .enterprises .section-body .brands .top3{
+        margin-bottom: 40px;
+    }*/
+  main .enterprises .section-body .brands .brand-area img {
+    width: 40%;
+  }
+  main .default .section-body .price-table .info-price {
+    min-width: 45%;
+    margin: 15px;
+  }
+  main .default .section-body .price-table .info-price .table-price {
+    font-size: 50px;
+  }
+  main .default .section-body .price-table .info-price .table-type {
+    font-size: 22px;
+  }
+  main .default .section-body .price-table .info-price .table-month,
+  main .default .section-body .price-table .info-price .table-info {
+    font-size: 18px;
+  }
+  main .default .section-body .price-table .info-price a {
+    font-size: 20px;
+    padding: 18px 40px;
+  }
+  main .package .section-body .section-package .sliders .slide {
+    height: auto;
+  }
+  main .package .section-body .section-package .sliders .slide .slider-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
+  .package .package-left {
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+  main .package .section-body .section-package .sliders .slide .slider-area .package-left img {
+    margin-right: 0;
+  }
+  .package .package-right {
+    overflow: hidden;
+    padding: 30px;
+  }
+  main .default .section-body .section-facts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 10px;
+  }
+  .section-facts .fact {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  main .share-midias {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .share-midias .share-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .all-midias {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .share-midias .all-midias .midias .last-number {
+    margin-right: 0;
+  }
+  main .default .section-body .section-contact form {
+    width: auto;
+  }
+  /*
+    main .default .section-body .section-contact form .inputs-name-email input{
+        flex-wrap: wrap;
+        width: 100%;
+    }*/
+  main .section-map {
+    padding: 0px;
+  }
+  main .section-map .section-maparea {
+    width: auto;
+    padding-bottom: 300px;
+  }
+  main .section-map .section-maparea .maparea-infos {
+    width: 100%;
+  }
+  main .section-map .section-maparea .maparea-infos .infos-item:last-child {
+    margin-bottom: 0;
+  }
+  footer {
+    padding: 35px;
+  }
+  footer .footer-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer .footer-area .footer-form {
+    padding: 50px 0;
+  }
+  footer .footer-area .footer-about {
+    padding: 0;
+    margin: 30px 0;
+  }
+  footer .footer-area .footer-form form input[type="email"] {
+    margin-bottom: 30px;
+  }
+  footer .footer-area .footer-social .midias-icon {
+    margin-bottom: 10px;
   }
 }
 
