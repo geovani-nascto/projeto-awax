@@ -36,6 +36,10 @@ header .container .logo img {
   height: 50px;
 }
 
+header .container .menu-burger {
+  display: none;
+}
+
 header .container .menu {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -425,6 +429,9 @@ main .default .section-body .price-table {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  /*.info-price:last-child{
+                    margin-right: 0;
+                }*/
 }
 
 main .default .section-body .price-table .info-price {
@@ -435,7 +442,7 @@ main .default .section-body .price-table .info-price {
   padding: 35px;
   background-color: #fff;
   border-radius: 10px;
-  margin-right: 35px;
+  margin: 0 17px;
 }
 
 main .default .section-body .price-table .info-price .table-type {
@@ -476,10 +483,6 @@ main .default .section-body .price-table .info-price a {
 
 main .default .section-body .price-table .info-price a:hover, main .default .section-body .price-table .info-price .active {
   background-color: #B28756;
-}
-
-main .default .section-body .price-table .info-price:last-child {
-  margin-right: 0;
 }
 
 main .default .section-body .section-facts .fact {
@@ -973,7 +976,13 @@ main .share-midias .share-icon h4 {
   font-size: 14px;
 }
 
-main .share-midias .midias i {
+main .share-midias .all-midias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .share-midias .all-midias .midias i {
   background-color: darkcyan;
   padding: 10px;
   border-radius: 50%;
@@ -984,27 +993,27 @@ main .share-midias .midias i {
   cursor: pointer;
 }
 
-main .share-midias .midias .fa-twitter {
+main .share-midias .all-midias .midias .fa-twitter {
   background-color: #34c6ef;
 }
 
-main .share-midias .midias .fa-linkedin-in {
+main .share-midias .all-midias .midias .fa-linkedin-in {
   background-color: #127bb4;
 }
 
-main .share-midias .midias .fa-facebook {
+main .share-midias .all-midias .midias .fa-facebook {
   background-color: #326197;
 }
 
-main .share-midias .midias .fa-instagram {
+main .share-midias .all-midias .midias .fa-instagram {
   background-color: #cd486b;
 }
 
-main .share-midias .midias .fa-pinterest {
+main .share-midias .all-midias .midias .fa-pinterest {
   background-color: #b71d29;
 }
 
-main .share-midias .midias h6 {
+main .share-midias .all-midias .midias h6 {
   margin: 0 35px 0 7px;
   font-size: 13px;
 }
@@ -1203,7 +1212,21 @@ footer .footer-area .footer-form form input[type="submit"]:hover {
 }
 
 @media (max-width: 1200px) {
+  header .container .logo {
+    margin-left: 30px;
+    width: 150px;
+  }
+  header .container .logo img {
+    width: 150px;
+  }
+  header .container .menu .menu-burger {
+    display: block;
+    width: 40px;
+    margin-right: 30px;
+    cursor: pointer;
+  }
   header .container .menu nav {
+    display: none;
     position: absolute;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.9);
@@ -1211,6 +1234,136 @@ footer .footer-area .footer-form form input[type="submit"]:hover {
     height: calc(100vh - 100px);
     top: 100px;
     right: 0;
+  }
+  header .container .menu nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .container .menu nav ul li a {
+    font-weight: 700;
+    font-size: 28px;
+    height: 80px;
+    margin-left: 60px;
+    border: 0;
+  }
+  header .container .menu nav ul li .active,
+  header .container .menu nav ul li a:hover {
+    border: 0;
+    color: #B28756;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 800px) {
+  main .default .section-body .about-us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .default .section-body .about-us .aboutus-right {
+    width: auto;
+  }
+  main .default .section-body .about-us .aboutus-left {
+    padding: 50px;
+  }
+  .section-body .services {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section-body .service {
+    min-width: 50%;
+    margin-bottom: 20px;
+  }
+  main .bg .team-area .section-body .team {
+    max-width: 580px;
+  }
+  main .enterprises .section-body .brands {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .enterprises .section-body .brands .brand-area {
+    min-width: 30%;
+  }
+  main .enterprises .section-body .brands .top3 {
+    margin-bottom: 40px;
+  }
+  main .default .section-body .price-table .info-price {
+    min-width: 45%;
+    margin: 15px;
+  }
+  /*main .default .section-body .price-table .info-price:last-child{
+        margin-right: 0;
+    }*/
+  main .package .section-body .section-package .sliders .slide .slider-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
+  .package .package-left {
+    overflow: hidden;
+  }
+  .package .package-right {
+    overflow: hidden;
+    padding: 60px;
+  }
+  main .default .section-body .section-facts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 10px;
+  }
+  .section-facts .fact {
+    min-width: 50%;
+    margin-bottom: 20px;
+  }
+  main .share-midias {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .share-midias .share-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .all-midias {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .share-midias .all-midias .midias .last-number {
+    margin-right: 0;
+  }
+  main .section-map {
+    padding: 30px;
+  }
+  main .section-map .section-maparea {
+    width: auto;
+  }
+  main .section-map .section-maparea .maparea-infos {
+    width: 100%;
+  }
+  main .section-map .section-maparea .maparea-infos .infos-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  header .container .menu nav ul li a {
+    font-size: 21px;
   }
 }
 
