@@ -1249,6 +1249,10 @@ footer{
         font-size: 33px;
     }
 
+    main .banner .sliders .slide .slider-area h2 {
+        font-size: 14px;
+    }
+
     main .default .section-body .about-us {
         flex-direction: column-reverse;
     }
@@ -1394,10 +1398,16 @@ footer{
     }
 
     main .default .section-body .section-contact form{
-        width: auto;
+        width: 85vw; //300px
     }
 
+    main .default .section-body .section-contact form .inputs-name-email{
+        flex-direction: column;
+    }
 
+    main .default .section-body .section-contact form .inputs-name-email input:first-child{
+        margin-right: 0;
+    }
 
     /*
     main .default .section-body .section-contact form .inputs-name-email input{
