@@ -1055,6 +1055,7 @@ footer{
         height: calc(100vh - 100px);
         top: 100px;
         right: 0;
+        transition: 0.3s;
     }
 
     header .container .menu nav ul {

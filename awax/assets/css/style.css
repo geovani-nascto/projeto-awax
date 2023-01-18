@@ -1234,6 +1234,8 @@ footer .footer-area .footer-form form input[type="submit"]:hover {
     height: calc(100vh - 100px);
     top: 100px;
     right: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   header .container .menu nav ul {
     -webkit-box-orient: vertical;
