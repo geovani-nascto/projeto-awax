@@ -1105,6 +1105,10 @@ footer{
         margin-bottom: 20px;
     }
 
+    main .default .section-body .services .service:first-child, main .default .section-body .section-facts .service:first-child{
+        border-left: 0;
+    }
+
     main .bg .team-area .section-body .team{
         max-width: 580px;
         //Cada slide tem 280 +20 de margin right
@@ -1278,6 +1282,10 @@ footer{
     .section-body .service{
         min-width: 100%;
         margin-bottom: 20px;
+    }
+
+    main .default .section-body .services .service:first-child, main .default .section-body .section-facts .service:first-child{
+        border-left: 0;
     }
 
     main .default .section-body .projects .projects-filters{
